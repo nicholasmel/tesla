@@ -30,12 +30,12 @@ function Header() {
 export default Header
 
 const Container = styled.div`
-    min-height: 60px;
+    height: 60px;
     position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 40px;
+    padding: 0px 40px;
     top: 0; 
     left: 0;
     right: 0;
