@@ -162,10 +162,8 @@ const Feature = styled.div`
     padding: 0 100px;
 
     img {
-        width: 80vw;
         height: 300px;
-
-        @media(max-width: 768px) {
+        @media(max-width: 1000px) {
         display: none;
     }
     }
@@ -175,6 +173,7 @@ const Feature = styled.div`
 const FeatureText = styled.div`
     padding-top: 80px;
     padding-left: 60px;
+    padding-right: 60px;
     text-align: left;
     
     h2 {
@@ -217,7 +216,7 @@ const Beyond = styled.div`
 const PowerTrain = styled.div`
     background-color: #ececec;
     padding: 40px 150px;
-    height: 100vh;
+    height: 700px;
     
     h1 {
         padding: 0 120px;
@@ -235,8 +234,13 @@ const PowerTrain = styled.div`
         padding-top: 30px;
         justify-content: center;
         align-items: center;
-        height: 60vh;
+        height: 440px;
         width: 76vw;
+
+        @media (max-width: 1000px) {
+            display: none;
+        }
+
     }
 `
 const Card = styled.div`
