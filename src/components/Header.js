@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import { useHistory } from "react-router-dom";
+import teslaicon from '../images/tesla.svg'
 
 function Header() {
     const history = useHistory();
@@ -8,7 +9,7 @@ function Header() {
     return (
         <Container>
             <a onClick={() => history.push('/')}>
-                <img src='/images/tesla.svg' alt="" />
+                <img src={teslaicon} alt="" />
             </a>
             <Menu>
                 <p onClick={() => history.push('/model-s')}>Model S</p>
