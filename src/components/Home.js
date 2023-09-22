@@ -21,16 +21,16 @@ function Home() {
                 rightBtnText='Existing inventory'
             />
             <Section
-                title='Model 3'
+                title='Model X'
                 description='Order Online for Touchless Delivery'
-                backgroundImg='https://tesla-cdn.thron.com/delivery/public/image/tesla/e90a341e-f9ca-4aa1-8eab-94afea118786/bvlatuR/std/2880x1800/M3-Homepage-D'
+                backgroundImg='https://tesla-cdn.thron.com/delivery/public/image/tesla/325743a2-d187-4e28-91a3-5a2e47e317f7/bvlatuR/std/2880x1800/ModelX-Homepage-D'
                 leftBtnText='Custom Order'
                 rightBtnText='Existing inventory'
             />
             <Section
-                title='Model X'
+                title='Model 3'
                 description='Order Online for Touchless Delivery'
-                backgroundImg='https://tesla-cdn.thron.com/delivery/public/image/tesla/325743a2-d187-4e28-91a3-5a2e47e317f7/bvlatuR/std/2880x1800/ModelX-Homepage-D'
+                backgroundImg='https://tesla-cdn.thron.com/delivery/public/image/tesla/e90a341e-f9ca-4aa1-8eab-94afea118786/bvlatuR/std/2880x1800/M3-Homepage-D'
                 leftBtnText='Custom Order'
                 rightBtnText='Existing inventory'
             />

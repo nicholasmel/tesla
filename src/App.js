@@ -12,7 +12,16 @@ function App() {
       <Router>
         <Switch>
           <Route path='/model-s'>
-            <Model />
+            <Model model="Model S" />
+          </Route>
+          <Route path='/model-3'>
+            <Model model="Model 3" />
+          </Route>
+          <Route path='/model-X'>
+            <Model model="Model X" />
+          </Route>
+          <Route path='/model-Y'>
+            <Model model="Model Y" />
           </Route>
           <Route path='/'>
             <Header />
