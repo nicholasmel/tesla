@@ -63,6 +63,8 @@ Produce Clean Energy From Your Roof'
 export default Home
 
 const Container = styled.div`
-    height: auto;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    max-height: 100vh;
 `
 

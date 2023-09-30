@@ -17,10 +17,10 @@ function App() {
           <Route path='/model-3'>
             <Model model="Model 3" />
           </Route>
-          <Route path='/model-X'>
+          <Route path='/model-x'>
             <Model model="Model X" />
           </Route>
-          <Route path='/model-Y'>
+          <Route path='/model-y'>
             <Model model="Model Y" />
           </Route>
           <Route path='/'>
@@ -34,3 +34,6 @@ function App() {
 }
 
 export default App;
+
+
+

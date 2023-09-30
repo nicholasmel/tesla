@@ -13,37 +13,41 @@ function Model({ model }) {
     var mph = '';
     var power = '';
 
-    if (model === 'Model S') {
-        description = 'Plaid'
-        backgroundImg = 'https://tesla-cdn.thron.com/delivery/public/image/tesla/676da95d-942e-414c-8534-f1832f0d4ced/bvlatuR/std/3296x1798/ms-homepage-desktop'
-        range = '396 mi'
-        speed = '1.99 s'
-        mph = '200 mph'
-        power = '1,020 hp'
-    }
-    else if (model === 'Model 3') {
-        description = 'Basic 3'
-        backgroundImg = 'https://tesla-cdn.thron.com/delivery/public/image/tesla/e90a341e-f9ca-4aa1-8eab-94afea118786/bvlatuR/std/2880x1800/M3-Homepage-D'
-        range = '396 mi'
-        speed = '1.99 s'
-        mph = '200 mph'
-        power = '1,020 hp'
-    }
-    else if (model === 'Model X') {
-        description = 'Bougie X'
-        backgroundImg = 'https://tesla-cdn.thron.com/delivery/public/image/tesla/325743a2-d187-4e28-91a3-5a2e47e317f7/bvlatuR/std/2880x1800/ModelX-Homepage-D'
-        range = '396 mi'
-        speed = '1.99 s'
-        mph = '200 mph'
-        power = '1,020 hp'
-    }
-    else if (model === 'Model Y') {
-        description = 'Plain Model Y'
-        backgroundImg = 'https://tesla-cdn.thron.com/delivery/public/image/tesla/8e2df1b9-a4bf-4eb9-beec-2cf5cc77fca0/bvlatuR/std/2880x2400/Desktop-ModelY?quality=70'
-        range = '396 mi'
-        speed = '1.99 s'
-        mph = '200 mph'
-        power = '1,020 hp'
+    switch (model) {
+        case 'Model S':
+            description = 'From $71,090*'
+            backgroundImg = 'https://tesla-cdn.thron.com/delivery/public/image/tesla/676da95d-942e-414c-8534-f1832f0d4ced/bvlatuR/std/3296x1798/ms-homepage-desktop'
+            range = '396 mi'
+            speed = '1.99 s'
+            mph = '200 mph'
+            power = '1,020 hp'
+            break;
+        case 'Model 3':
+            description = 'From $29,740*'
+            backgroundImg = 'https://tesla-cdn.thron.com/delivery/public/image/tesla/e90a341e-f9ca-4aa1-8eab-94afea118786/bvlatuR/std/2880x1800/M3-Homepage-D'
+            range = '333 mi'
+            speed = '3.1 s'
+            mph = '200 mph'
+            power = '1,020 hp'
+            break;
+        case 'Model X':
+            description = 'From $68,590*'
+            backgroundImg = 'https://tesla-cdn.thron.com/delivery/public/image/tesla/325743a2-d187-4e28-91a3-5a2e47e317f7/bvlatuR/std/2880x1800/ModelX-Homepage-D'
+            range = '333 mi'
+            speed = '2.5 s'
+            mph = '200 mph'
+            power = '1,020 hp'
+            break;
+        case 'Model Y':
+            description = 'From $39,390*'
+            backgroundImg = 'https://tesla-cdn.thron.com/delivery/public/image/tesla/8e2df1b9-a4bf-4eb9-beec-2cf5cc77fca0/bvlatuR/std/2880x2400/Desktop-ModelY?quality=70'
+            range = '330 mi'
+            speed = '3.5 s'
+            mph = '155 mph'
+            power = '1,020 hp'
+            break;
+        default:
+            break;
     }
 
     return (
@@ -157,13 +161,11 @@ const Button = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 100px;
-    opacity: 0.85;
+    border-radius: 2px;
     text-transform: uppercase;
     font-size: 12px;
     cursor: pointer;        
     background-color: transparent;
-    opacity: 0.85;
     border-width: 4px;
     border-style: solid;
     border-color: black;
@@ -208,7 +210,6 @@ const Feature = styled.div`
         display: none;
     }
     }
-
 `
 
 const FeatureText = styled.div`

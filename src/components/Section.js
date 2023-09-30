@@ -14,7 +14,7 @@ function Section({ title, description, backgroundImg, leftBtnText, rightBtnText,
             </ItemText>
             <Buttons>
                 <Fade bottom>
-                    <ButtonGroup>
+                    <DetailGroup>
                         {leftBtnText &&
                             <LeftButton>
                                 {leftBtnText}
@@ -45,6 +45,8 @@ function Section({ title, description, backgroundImg, leftBtnText, rightBtnText,
                                 </Spec>
                             </ModelDetail>
                         }
+                    </DetailGroup>
+                    <ButtonGroup>
                         {middleBtnText &&
                             <ModelDetail>
                                 <MiddleButton>
@@ -105,12 +107,17 @@ const Spec = styled.div`
     }
 `
 
-const ButtonGroup = styled.div`
+const DetailGroup = styled.div`
     display: flex;
-    margin-bottom: 70px;
+    padding-bottom: 2vh;
     @media (max-width: 768px) {
         flex-direction: column;
     }
+`
+
+const ButtonGroup = styled.div`
+    display: flex;
+    padding-bottom: 2vh;
 `
 
 const LeftButton = styled.div`
@@ -121,8 +128,7 @@ const LeftButton = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 100px;
-    opacity: 0.85;
+    border-radius: 2px;
     text-transform: uppercase;
     font-size: 12px;
     margin: 8px;
@@ -131,19 +137,17 @@ const LeftButton = styled.div`
 
 const RightButton = styled(LeftButton)`
     background-color: white;
-    opacity: 0.55;
     color: black;
 `
 
 const MiddleButton = styled(LeftButton)`
     width: 180px;   
-    background-color: transparent;
-    opacity: 0.85;
-    color: white;
+    background-color: white;
+    font-weight: 10;
+    color: #393c41;
     border-width: 4px;
     border-style: solid;
     border-color: white;
-
 `
 
 const DownArrow = styled.img`
